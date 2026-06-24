@@ -1,6 +1,23 @@
 [![Code Source](https://img.shields.io/badge/Java-Voir%20le%20code%20source-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://github.com/Kycks912004/projet-java-ing3/tree/main/projet-java-ing3-2025-ing3-java-2025-11-2-main/src)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github)](https://github.com/Kycks912004/projet-java-ing3)
 
-# Booking Application
+# 🏨 Booking Application — Java OOP
+
+## 🖼️ Architecture du Projet
+
+<div align="center">
+
+**Diagramme de classes complet (UML)**
+
+![Diagramme de classes](https://raw.githubusercontent.com/Kycks912004/projet-java-ing3/main/projet-java-ing3-2025-ing3-java-2025-11-2-main/docs/diagramme_classe_complet.png)
+
+**Vue simplifiée**
+
+![Diagramme simplifié](https://raw.githubusercontent.com/Kycks912004/projet-java-ing3/main/projet-java-ing3-2025-ing3-java-2025-11-2-main/docs/diagramme_classe_sans_m%C3%A9thodes.png)
+
+</div>
+
+---
 
 This Java-based Booking Application allows users to book accommodations with a user-friendly graphical interface following the MVC (Model-View-Controller) architecture pattern.
 
