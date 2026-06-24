@@ -89,13 +89,7 @@ The application uses a MySQL database with the following tables:
 
 ### Login Credentials
 
-- Admin user:
-  - Username: admin
-  - Password: admin123
-  
-- Regular user:
-  - Username: john_doe
-  - Password: password123
+Default credentials are defined in `insert_sample_data.sql` — update them before any production use.
 
 ### User Features
 
@@ -118,6 +112,11 @@ The application uses a MySQL database with the following tables:
 ## UML Diagrams
 
 UML diagrams are stored in the `docs` folder.
+
+## Author
+
+**Kylian Pinto** — M1 Ingénierie Data & IA, ECE Paris  
+[![GitHub](https://img.shields.io/badge/GitHub-Kycks912004-181717?style=flat&logo=github)](https://github.com/Kycks912004)
 
 ## License
 
