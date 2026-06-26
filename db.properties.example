@@ -1,0 +1,7 @@
+# Copier ce fichier en db.properties et remplir avec vos credentials Railway
+# db.properties est dans .gitignore (ne jamais committer les credentials)
+
+# Exemple Railway :
+db.url=jdbc:mysql://VOTRE_HOST.railway.app:PORT/railway?useSSL=true&allowPublicKeyRetrieval=true&serverTimezone=UTC
+db.user=root
+db.password=VOTRE_MOT_DE_PASSE

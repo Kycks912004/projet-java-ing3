@@ -1,0 +1,48 @@
+name: Build & Release JAR
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java 8
+        uses: actions/setup-java@v4
+        with:
+          java-version: '8'
+          distribution: 'temurin'
+
+      - name: Build with Maven
+        working-directory: projet-java-ing3-2025-ing3-java-2025-11-2-main
+        run: mvn clean package -DskipTests
+
+      - name: Upload JAR artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: booking-app-jar
+          path: projet-java-ing3-2025-ing3-java-2025-11-2-main/target/booking-app-*-jar-with-dependencies.jar
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: "Booking App v1.0.${{ github.run_number }}"
+          body: |
+            ## 🏨 Booking Application — Java OOP
+
+            ### Télécharger et lancer
+            1. Télécharger `booking-app-jar-with-dependencies.jar`
+            2. Installer Java 8+ si pas déjà fait
+            3. Configurer la base de données (voir README)
+            4. Lancer : `java -jar booking-app-1.0-SNAPSHOT-jar-with-dependencies.jar`
+          files: projet-java-ing3-2025-ing3-java-2025-11-2-main/target/booking-app-*-jar-with-dependencies.jar
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
