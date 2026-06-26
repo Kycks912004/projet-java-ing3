@@ -15,11 +15,18 @@
     </properties>
 
     <dependencies>
-        <!-- MySQL Connector -->
+        <!-- MySQL Connector (kept for local MySQL users) -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.28</version>
+        </dependency>
+
+        <!-- SQLite — embedded DB, no server needed -->
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.45.1.0</version>
         </dependency>
 
         <!-- JFreeChart for statistics -->
